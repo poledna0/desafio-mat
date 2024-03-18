@@ -253,7 +253,200 @@ elif Inicio == '2':
             print('você acertou')
         else:
             print('você errou')
-    else:
-        print('o')
+# jogador um
+    # modo medio do jogo dupla
+    elif Dificuldade == 'médio'or Dificuldade == 'medio':
+        print('O jogo vai ser para 2 pessoas')
+        print('Vez do jogador Numero 1')
+        Num1md1 = random.randint(-100, 100)
+        Num2md1 = random.randint(-100, 100)
+
+        # primeira pegunta do médio dupla +
+        Rm1d1 = input(f'{Num1md1} + {Num2md1}=')
+        Rm1d1 = int(Rm1d1)
+        if Rm1d1 == Num1md1 + Num2md1:
+            print('você acertou')
+        else:
+            print('você errou')
+
+        Num3md1 = random.randint(-100, 100)
+        Num4md1 = random.randint(-100, 100)
+
+        # segunda pergunda do medio dupla -
+        Rm2d1 = input(f'{Num3md1} - {Num4md1}=')
+        Rm2d1 = int(Rm2d1)
+        if Rm2d1 == Num3md1-Num4md1:
+            print('você acertou')
+        else:
+            print('você errou')
+
+        Num5md1 = random.randint(-100, 100)
+        Num6md1 = random.randint(-100, 100)
+
+        # terceira pergunta do medio dupla *
+        Rm3d1 = input(f'{Num5md1} * {Num6md1}=')
+        Rm3d1 = int(Rm3d1)
+        if Rm3d1 == Num5md1 * Num6md1:
+            print('você acertou')
+        else:
+            print('você errou')
+
+        Num7md1 = random.randint(-100, 100)
+        Num8md1 = random.randint(-100, 100)
+
+        # quarta pergunta do medio dupla //
+        Rm4d1 = input(f'{Num7md1} // {Num8md1}=')
+        Rm4d1 = int(Rm4d1)
+        if Rm4d1 == Num7md1 // Num8md1:
+            print('você acertou')
+        else:
+            print('você errou')
+
+# jogador dois
+        
+        Num1md2 = random.randint(-100, 100)
+        Num2md2 = random.randint(-100, 100)
+
+        print('Vez do jogador Numero 2')
+        input('Aperte ENTER para continuar')
+        
+        # primeira pegunta do medio dupla +
+        Rm1d2 = input(f'{Num1md2} + {Num2md2}=')
+        Rm1d2 = int(Rm1d2)
+        if Rm1d2 == Num1md2 + Num2md2:
+            print('você acertou')
+        else:
+            print('você errou')
+
+        Num3md2 = random.randint(-100, 100)
+        Num4md2 = random.randint(-100, 100)
+
+        # segunda pergunda do facil dupla -
+        Rm2d2 = input(f'{Num3md2} - {Num4md2}=')
+        Rm2d2 = int(Rm2d2)
+        if Rm2d2 == Num3md2-Num4md2:
+            print('você acertou')
+        else:
+            print('você errou')
+
+        Num5md2 = random.randint(-100, 100)
+        Num6md2 = random.randint(-100, 100)
+        # terceira pergunta do facil dupla *
+        Rm3d2 = input(f'{Num5md2} * {Num6md2}=')
+        Rm3d2 = int(Rm3d2)
+        if Rm3d2 == Num5md2 * Num6md2:
+            print('você acertou')
+        else:
+            print('você errou')
+
+        Num7md2 = random.randint(-100, 100)
+        Num8md2 = random.randint(-100, 100)
+
+        # quarta pergunta do medio dupla //
+        Rm4d2 = input(f'{Num7md2} // {Num8md2}=')
+        Rm4d2 = int(Rm4d2)
+        if Rm4d2 == Num7md2 // Num8md2:
+            print('você acertou')
+        else:
+            print('você errou')
+# jogador um
+    # modo dificil do jogo dupla
+    if Dificuldade == 'difícil'or Dificuldade == 'dificil':
+        print('O jogo vai ser para 2 pessoas')
+        print('Vez do jogador Numero 1')
+        Num1Dd1 = random.randint(-1000, 1000)
+        Num2Dd1 = random.randint(-1000, 1000)
+
+        # primeira pegunta do dificil dupla +
+        RD1d1 = input(f'{Num1Dd1} + {Num2Dd1}=')
+        RD1d1 = int(RD1d1)
+        if RD1d1 == Num1Dd1 + Num2Dd1:
+            print('você acertou')
+        else:
+            print('você errou')
+
+        Num3Dd1 = random.randint(-1000, 1000)
+        Num4Dd1 = random.randint(-1000, 1000)
+
+        # segunda pergunda do dificil dupla -
+        RD2d1 = input(f'{Num3Dd1} - {Num4Dd1}=')
+        RD2d1 = int(RD2d1)
+        if RD2d1 == Num3Dd1 - Num4Dd1:
+            print('você acertou')
+        else:
+            print('você errou')
+
+        Num5Dd1 = random.randint(-1000, 1000)
+        Num6Dd1 = random.randint(-1000, 1000)
+
+        # terceira pergunta do dificil dupla *
+        RD3d1 = input(f'{Num5Dd1} * {Num6Dd1}=')
+        RD3d1 = int(RD3d1)
+        if RD3d1 == Num5Dd1 * Num6Dd1:
+            print('você acertou')
+        else:
+            print('você errou')
+
+        Num7Dd1 = random.randint(-1000, 1000)
+        Num8Dd1 = random.randint(-1000, 1000)
+
+        # quarta pergunta do facil dupla //
+        RD4d1 = input(f'{Num7Dd1} // {Num8Dd1}=')
+        RD4d1 = int(RD4d1)
+        if RD4d1 == Num7Dd1 // Num8Dd1:
+            print('você acertou')
+        else:
+            print('você errou')
+
+# jogador dois
+        
+        Num1Dd2 = random.randint(-1000, 1000)
+        Num2Dd2 = random.randint(-1000, 1000)
+
+        print('Vez do jogador Numero 2')
+        input('Aperte ENTER para continuar')
+        
+        # primeira pegunta do dificil dupla +
+        RD1d2 = input(f'{Num1Dd2} + {Num2Dd2}=')
+        RD1d2 = int(RD1d2)
+        if RD1d2 == Num1Dd2 + Num2Dd2:
+            print('você acertou')
+        else:
+            print('você errou')
+
+        Num3Dd2 = random.randint(-1000, 1000)
+        Num4Dd2 = random.randint(-1000, 1000)
+
+        # segunda pergunda do dificil dupla -
+        RD2d2 = input(f'{Num3Dd2} - {Num4Dd2}=')
+        RD2d2 = int(RD2d2)
+        if RD2d2 == Num3Dd2-Num4Dd2:
+            print('você acertou')
+        else:
+            print('você errou')
+
+        Num5Dd2 = random.randint(-1000, 1000)
+        Num6Dd2 = random.randint(-1000, 1000)
+
+        # terceira pergunta do facil dupla *
+        RD3d2 = input(f'{Num5Dd2} * {Num6Dd2}=')
+        RD3d2 = int(RD3d2)
+        if RD3d2 == Num5Dd2 * Num6Dd2:
+            print('você acertou')
+        else:
+            print('você errou')
+
+        Num7Dd2 = random.randint(-1000, 1000)
+        Num8Dd2 = random.randint(-1000, 1000)
+
+        # quarta pergunta do dificil dupla //
+        RD4d2 = input(f'{Num7Dd2} // {Num8Dd2}=')
+        RD4d2 = int(RD4d2)
+        if RD4d2 == Num7Dd2 // Num8Dd2:
+            print('você acertou')
+        else:
+            print('você errou')
+
+
 else:
     print('Reinicie o jogo')
