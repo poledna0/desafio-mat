@@ -1,4 +1,4 @@
-# Henrique Poledna e EduaRdo Machado
+# Henrique Poledna e Eduardo Machado de Oliveira
 import random
 
 Inicio = input('Você quer jogar com quantos jogadores?[1/2]:')
