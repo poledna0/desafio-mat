@@ -1,7 +1,3 @@
-<style type="text/css">
-    ol { list-style-type: upper-alpha; }
-</style>
-
 # TDE 1
 
 ## Descrição
