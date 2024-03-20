@@ -5,6 +5,7 @@ Inicio = input('Você quer jogar com quantos jogadores?[1/2]:')
 Dificuldade = input('Qual a dificuladade do jogo?[Facíl, Médio ou Difícil]:').lower()
 
 import random
+import time
 
 if Inicio == '1':
 
@@ -13,49 +14,128 @@ if Inicio == '1':
 
         print('O jogo vai ser para apenas 1 pessoa')
 
+        # declarnado os numeros aleatorios
         Num1f = random.randint(-10, 10)
         Num2f = random.randint(-10, 10)
+
+        # inicio da contagem de tempo
+        InicioTempoEX11 = time.time()
 
         # primeira pegunta do facil +
         Rf1 = input(f'{Num1f} + {Num2f}=')
         Rf1 = int(Rf1)
+
+        # fim do tempo
+        FimDoTempoEX11 = time.time()
+        FimDoTempoEX11 = int(FimDoTempoEX11)
+        InicioTempoEX11 = int(InicioTempoEX11)
+        ResultadoDoTempoEX11 = (FimDoTempoEX11 - InicioTempoEX11)
+
+        # resposta
         if Rf1 == Num1f + Num2f:
             print('você acertou')
+            if ResultadoDoTempoEX11 < 5: 
+                NotaFinalEX11 = 10
+
+            elif ResultadoDoTempoEX11 < 30:
+                NotaFinalEX11 = 10 - (ResultadoDoTempoEX11 * 0.2)
+
         else:
             print('você errou')
+            NotaFinalEX11 = 0
 
+        # declarando os numeros aleatorios
         Num3f = random.randint(-10, 10)
         Num4f = random.randint(-10, 10)
+
+        # inicio do tempo
+        InicioTempoEX12 = time.time()
 
         # segunda pergunda do facil -
         Rf2 = input(f'{Num3f} - {Num4f}=')
         Rf2 = int(Rf2)
+
+        # fim do tempo
+        FimDoTempoEX12 = time.time()
+        FimDoTempoEX12 = int(FimDoTempoEX12)
+        InicioTempoEX12 = int(InicioTempoEX12)
+        ResultadoDoTempoEX12 = (FimDoTempoEX12 - InicioTempoEX12)
+
+        # respostas
         if Rf2 == Num3f-Num4f:
+
             print('você acertou')
+
+            if ResultadoDoTempoEX12 < 5: 
+                NotaFinalEX12 = 10
+
+            elif ResultadoDoTempoEX12 < 30:
+                NotaFinalEX12 = 10 - (ResultadoDoTempoEX12 * 0.2)
+
         else:
             print('você errou')
+            NotaFinalEX2 = 0
 
+        # declarando numero aleatorio
         Num5f = random.randint(-10, 10)
         Num6f = random.randint(-10, 10)
+
+        # inicio do tempo
+        InicioTempoEX13 = time.time()
 
         # terceira pergunta do facil *
         Rf3 = input(f'{Num5f} * {Num6f}=')
         Rf3 = int(Rf3)
+
+        # fim do tempo
+        FimDoTempoEX13 = time.time()
+        FimDoTempoEX13 = int(FimDoTempoEX13)
+        InicioTempoEX13 = int(InicioTempoEX13)
+        ResultadoDoTempoEX13 = (FimDoTempoEX13 - InicioTempoEX13)
+
+        # respostas
         if Rf3 == Num5f * Num6f:
             print('você acertou')
+            
+            if ResultadoDoTempoEX13 < 5: 
+                NotaFinalEX13 = 10
+
+            elif ResultadoDoTempoEX12 < 30:
+                NotaFinalEX13 = 10 - (ResultadoDoTempoEX13 * 0.2)
+
         else:
             print('você errou')
+            NotaFinalEX13 = 0
 
+        # declarando numero aleatorio 
         Num7f = random.randint(-10, 10)
         Num8f = random.randint(-10, 10)
+
+        # inicio do temp
+        InicioTempoEX14 = time.time()
 
         # quarta pergunta do facil //
         Rf4 = input(f'{Num7f} // {Num8f}=')
         Rf4 = int(Rf4)
+
+        # fim do tempo
+        FimDoTempoEX14 = time.time()
+        FimDoTempoEX14 = int(FimDoTempoEX14)
+        InicioTempoEX14 = int(InicioTempoEX14)
+        ResultadoDoTempoEX14 = (FimDoTempoEX14 - InicioTempoEX14)
+
         if Rf4 == Num7f // Num8f:
             print('você acertou')
+
+            if ResultadoDoTempoEX14 < 5: 
+                NotaFinalEX14 = 10
+
+            elif ResultadoDoTempoEX14 < 30:
+                NotaFinalEX14 = 10 - (ResultadoDoTempoEX14 * 0.2)
+
         else:
             print('você errou')
+            NotaFinalEX14 = 0
 
     # dificuldade medio
     elif Dificuldade == 'médio' or Dificuldade == 'medio':
