@@ -1,4 +1,4 @@
-# Henrique Poledna e Eduardo Machado de Oliveira
+# Henrique Poledna , Eduardo Machado de Oliveira , Arthur Ascione de Carvalho , Arthur Gabriel Goes e Pedro Lucas Gomes Vitorino
 import random
 
 Inicio = input('Você quer jogar com quantos jogadores?[1/2]:')
