@@ -74,7 +74,8 @@ if Inicio == '1':
 
         else:
             print('você errou')
-            NotaFinalEX2 = 0
+            NotaFinalEX12 = 0
+ 
 
         # declarando numero aleatorio
         Num5f = random.randint(-10, 10)
@@ -124,6 +125,7 @@ if Inicio == '1':
         InicioTempoEX14 = int(InicioTempoEX14)
         ResultadoDoTempoEX14 = (FimDoTempoEX14 - InicioTempoEX14)
 
+        # respostas
         if Rf4 == Num7f // Num8f:
             print('você acertou')
 
@@ -132,108 +134,277 @@ if Inicio == '1':
 
             elif ResultadoDoTempoEX14 < 30:
                 NotaFinalEX14 = 10 - (ResultadoDoTempoEX14 * 0.2)
+            
 
         else:
             print('você errou')
             NotaFinalEX14 = 0
 
+        # mostara nota
+        print(f" você fez um total de {NotaFinalEX11 + NotaFinalEX12 + NotaFinalEX13 + NotaFinalEX14} pontos ")
+    
     # dificuldade medio
     elif Dificuldade == 'médio' or Dificuldade == 'medio':
-
         print('O jogo vai ser para apenas 1 pessoa')
 
+        # declarnado numeros aleatorios
         Num1m = random.randint(-100, 100)
         Num2m = random.randint(-100, 100)
+
+        # inicio do tempo
+        InicioTempoEX11m = time.time()
 
         # primeira pergunta do medio +
         Rm1 = input(f'{Num1m} + {Num2m}=')
         Rm1 = int(Rm1)
+
+        # fim do tempo
+        FimDoTempoEX11m = time.time()
+        FimDoTempoEX11m = int(FimDoTempoEX11m)
+        InicioTempoEX11m = int(InicioTempoEX11m)
+        ResultadoDoTempoEX11m = (FimDoTempoEX11m - InicioTempoEX11m)
+
+        # respostas
         if Rm1 == Num1m + Num2m:
             print('você acertou')
+
+            if ResultadoDoTempoEX11m < 5: 
+                NotaFinalEX11m = 10
+
+            elif ResultadoDoTempoEX11m < 30:
+                NotaFinalEX11m = 10 - (ResultadoDoTempoEX11m * 0.2)
+
         else:
             print('você errou')
+            NotaFinalEX11m = 0
 
+        # declarando numero aleatorio
         Num3m = random.randint(-100, 100)
         Num4m = random.randint(-100, 100)
+
+        # inicio do tempo 
+        InicioTempoEX12m = time.time()
 
         # segunda pergunta do medio -
         Rm2 = input(f'{Num3m} - {Num4m}=')
         Rm2 = int(Rm2)
+
+        # fim do tempo 
+        FimDoTempoEX12m = time.time()
+        FimDoTempoEX12m = int(FimDoTempoEX12m)
+        InicioTempoEX12m = int(InicioTempoEX12m)
+        ResultadoDoTempoEX12m = (FimDoTempoEX12m - InicioTempoEX12m)
+
+        # respostas
         if Rm2 == Num3m - Num4m:
             print('você acertou')
+
+            if ResultadoDoTempoEX12m < 5: 
+                NotaFinalEX12m = 10
+
+            elif ResultadoDoTempoEX12m < 30:
+                NotaFinalEX12m = 10 - (ResultadoDoTempoEX12m * 0.2)
+
         else:
             print('você errou')
+            NotaFinalEX12m = 0
 
+        # declarnado numero aleatorio
         Num5m = random.randint(-100, 100)
         Num6m = random.randint(-100, 100)
+
+        # inicio do tempo
+        InicioTempoEX13m = time.time()
 
         # terceira pergunta do medio *
         Rm3 = input(f'{Num5m} * {Num6m}=')
         Rm3 = int(Rm3)
+
+        # fim do tempo
+        FimDoTempoEX13m = time.time()
+        FimDoTempoEX13m = int(FimDoTempoEX13m)
+        InicioTempoEX13m = int(InicioTempoEX13m)
+        ResultadoDoTempoEX13m = (FimDoTempoEX13m - InicioTempoEX13m)
+
+        # respostas
         if Rm3 == Num5m * Num6m:
             print('você acertou')
+
+            if ResultadoDoTempoEX13m < 5: 
+                NotaFinalEX13m = 10
+
+            elif ResultadoDoTempoEX13m < 30:
+                NotaFinalEX13m = 10 - (ResultadoDoTempoEX13m * 0.2)
+
         else:
             print('você errou')
+            NotaFinalEX13m = 0
 
+        # declarnado numero aleatorio
         Num7m = random.randint(-100, 100)
         Num8m = random.randint(-100, 100)
+
+        # inicio do tempo
+        InicioTempoEX14m = time.time()
 
         # quarta pegunta do medio //
         Rm4 = input(f'{Num7m} // {Num8m}=')
         Rm4 = int(Rm4)
+
+        # fim do tempo
+        FimDoTempoEX14m = time.time()
+        FimDoTempoEX14m = int(FimDoTempoEX14m)
+        InicioTempoEX14m = int(InicioTempoEX14m)
+        ResultadoDoTempoEX14m = (FimDoTempoEX14m - InicioTempoEX14m)
+
+        # respostas
         if Rm4 == Num7m // Num8m:
             print('você acertou')
+
+            if ResultadoDoTempoEX14m < 5: 
+                NotaFinalEX13m = 10
+
+            elif ResultadoDoTempoEX14m < 30:
+                NotaFinalEX14m = 10 - (ResultadoDoTempoEX14m * 0.2)
+
         else:
             print('você errou')
+            NotaFinalEX14m = 0
+            
+        # mostrar nota
+        print(f" você fez um total de {NotaFinalEX11m + NotaFinalEX12m + NotaFinalEX13m + NotaFinalEX14m} ")
 
     # dificuldade dificil
     elif Dificuldade == 'difícil' or Dificuldade == ('dificil'):
 
         print('O jogo vai ser para apenas 1 pessoa')
 
+        # declarando numero aleatorio 
         Num1d = random.randint(-1000, 1000)
         Num2d = random.randint(-1000, 1000)
+
+        # inicio do tempo
+        InicioTempoEX11d = time.time()
 
         # primeira pergunta do dificil +
         Rd1 = input(f'{Num1d} + {Num2d}=')
         Rd1 = int(Rd1)
+
+        # fim do tempo  
+        FimDoTempoEX11d = time.time()
+        FimDoTempoEX11d = int(FimDoTempoEX11d)
+        InicioTempoEX11d = int(InicioTempoEX11d)
+        ResultadoDoTempoEX11d = (FimDoTempoEX11d - InicioTempoEX11d)
+
+        # respostas
         if Rd1 == Num1d + Num2d:
             print('você acertou')
+
+            if ResultadoDoTempoEX11d < 5: 
+                NotaFinalEX11d = 10
+
+            elif ResultadoDoTempoEX11d < 30:
+                NotaFinalEX11d = 10 - (ResultadoDoTempoEX11d * 0.2)
+
         else:
             print('você errou')
+            NotaFinalEX11d = 0
 
+        # declarando numero aleatorio
         Num3d = random.randint(-1000, 1000)
         Num4d = random.randint(-1000, 1000)
+
+        # inicio do tempo
+        InicioTempoEX12d = time.time()
 
         # segunda pergunta dificil -
         Rd2 = input(f'{Num3d} - {Num4d}=')
         Rd2 = int(Rd2)
+
+        # fim do tempo
+        FimDoTempoEX12d = time.time()
+        FimDoTempoEX12d = int(FimDoTempoEX12d)
+        InicioTempoEX12d = int(InicioTempoEX12d)
+        ResultadoDoTempoEX12d = (FimDoTempoEX12d - InicioTempoEX12d)
+
+        # respostas 
         if Rd2 == Num3d - Num4d:
             print('você acertou')
+
+            if ResultadoDoTempoEX12d < 5: 
+                NotaFinalEX12d = 10
+
+            elif ResultadoDoTempoEX12d < 30:
+                NotaFinalEX12d = 10 - (ResultadoDoTempoEX12d * 0.2)
+
         else:
             print('você errou')
+            NotaFinalEX12d = 0
 
+        # declarando numero aleatorio
         Num5d = random.randint(-1000, 1000)
         Num6d = random.randint(-1000, 1000)
+
+        # inicio do tempo
+        InicioTempoEX13d = time.time()
 
         # terceira pergunta do dificil *
         Rd3 = input(f'{Num5d} * {Num6d}=')
         Rd3 = int(Rd3)
+
+        # fim do tempo 
+        FimDoTempoEX13d = time.time()
+        FimDoTempoEX13d = int(FimDoTempoEX13d)
+        InicioTempoEX13d = int(InicioTempoEX13d)
+        ResultadoDoTempoEX13d = (FimDoTempoEX13d - InicioTempoEX13d)
+
+        # respostas 
         if Rd3 == Num5d * Num6d:
             print('você acertou')
+
+            if ResultadoDoTempoEX13d < 5: 
+                NotaFinalEX13d = 10
+
+            elif ResultadoDoTempoEX13d < 30:
+                NotaFinalEX13d = 10 - (ResultadoDoTempoEX13d * 0.2)
+
         else:
             print('você errou')
+            NotaFinalEX13d = 0
 
+        # declarando numero aleatorio 
         Num7d = random.randint(-1000, 1000)
         Num8d = random.randint(-1000, 1000)
+
+        # inicio tempo
+        InicioTempoEX14d = time.time()
 
         # quarta pegunta do dificil //
         Rd4 = input(f'{Num7d} // {Num8d}=')
         Rd4 = int(Rd4)
+
+        # fim do tempo
+        FimDoTempoEX14d = time.time()
+        FimDoTempoEX14d = int(FimDoTempoEX14d)
+        InicioTempoEX14d = int(InicioTempoEX14d)
+        ResultadoDoTempoEX14d = (FimDoTempoEX14d - InicioTempoEX14d)
+
+        #respostas 
         if Rd4 == Num7d // Num8d:
             print('você acertou')
+
+            if ResultadoDoTempoEX14d < 5: 
+                NotaFinalEX14d = 10
+
+            elif ResultadoDoTempoEX14d < 30:
+                NotaFinalEX14d = 10 - (ResultadoDoTempoEX14d * 0.2)
+
         else:
             print('você errou')
+            NotaFinalEX14d = 0
+
+        # mostar nota
+        print(f" você fez um total de {NotaFinalEX11d + NotaFinalEX12d + NotaFinalEX13d + NotaFinalEX14d} ")
 
 elif Inicio == '2':
 # jogador um
@@ -530,3 +701,5 @@ elif Inicio == '2':
 
 else:
     print('Reinicie o jogo')
+
+
