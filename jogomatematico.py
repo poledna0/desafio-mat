@@ -446,7 +446,7 @@ elif Inicio == '2':
 
         # decalarando numero aleatorio
         Num3fd1 = random.randint(-10, 10)
-        Num4fd1 = random.randint(-10, 10)
+        Num4fd1 = random.randint(-10, 10) 
 
         # inicio do tempo
         InicioTempoEX22 = time.time()
@@ -772,12 +772,14 @@ elif Inicio == '2':
         # declarando numero aleatorio
         Num7md1 = random.randint(-100, 100)
         Num8md1 = random.randint(-100, 100)
+        Num7md1 = int(Num7md1)
+        Num8md1 = int(Num8md1)
 
         # inicio tempo
         InicioTempoEX24m = time.time()
 
         # quarta pergunta do medio dupla //
-        Rm4d1 = input(f'{Num7md1} // {Num8md1}=')
+        Rm4d1 = input(f'{Num7md1} / {Num8md1}=')
         Rm4d1 = int(Rm4d1)
 
         # fim tempo 
@@ -1044,7 +1046,7 @@ elif Inicio == '2':
 
 
         # quarta pergunta do facil dupla //
-        RD4d1 = input(f'{Num7Dd1} // {Num8Dd1}=')
+        RD4d1 = input(f'{Num7Dd1} / {Num8Dd1}=')
         RD4d1 = int(RD4d1)
 
         # fim tempo
