@@ -262,7 +262,7 @@ if Inicio == '1':
             print('você acertou')
 
             if ResultadoDoTempoEX14m < 5: 
-                NotaFinalEX13m = 10
+                NotaFinalEX14m = 10
 
             elif ResultadoDoTempoEX14m < 30:
                 NotaFinalEX14m = 10 - (ResultadoDoTempoEX14m * 0.2)
