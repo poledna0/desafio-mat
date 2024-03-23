@@ -318,7 +318,7 @@ if Inicio == '1':
         InicioTempoEX12d = time.time()
 
         # segunda pergunta dificil -
-        Rd2 = int(tinput(f'{Num3d} - {Num4d}='))
+        Rd2 = int(input(f'{Num3d} - {Num4d}='))
 
         # fim do tempo
         FimDoTempoEX12d = time.time()
@@ -1025,7 +1025,7 @@ elif Inicio == '2':
 
 
         # quarta pergunta do facil dupla //
-        RD4d1 = int(input(f'{Num7Dd1} / {Num8Dd1}='))
+        RD4d1 = int(input(f'{Num7Dd1} // {Num8Dd1}='))
 
 
         # fim tempo
