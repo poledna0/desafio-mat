@@ -2,7 +2,13 @@
 
 
 Inicio = input('Você quer jogar com quantos jogadores?[1/2]:')
-Dificuldade = input('Qual a dificuladade do jogo?[Facíl, Médio ou Difícil]:').lower()
+print('1 - FÁCIL')
+print('2 - MEDIO')
+print('3 - DIFICIL\n')
+Dificuldade = int(input('Sua escolha: ' )) 
+
+
+
 
 import random
 import time
@@ -10,7 +16,7 @@ import time
 if Inicio == '1':
 
     # modo facil do jogo
-    if Dificuldade == 'fácil'or Dificuldade == 'facil':
+    if Dificuldade == 1 :
 
         print('O jogo vai ser para apenas 1 pessoa')
 
@@ -22,8 +28,7 @@ if Inicio == '1':
         InicioTempoEX11 = time.time()
 
         # primeira pegunta do facil +
-        Rf1 = input(f'{Num1f} + {Num2f}=')
-        Rf1 = int(Rf1)
+        Rf1 = int(input(f'{Num1f} + {Num2f}='))
 
         # fim do tempo
         FimDoTempoEX11 = time.time()
@@ -52,8 +57,7 @@ if Inicio == '1':
         InicioTempoEX12 = time.time()
 
         # segunda pergunda do facil -
-        Rf2 = input(f'{Num3f} - {Num4f}=')
-        Rf2 = int(Rf2)
+        Rf2 = int(input(f'{Num3f} - {Num4f}='))
 
         # fim do tempo
         FimDoTempoEX12 = time.time()
@@ -85,8 +89,7 @@ if Inicio == '1':
         InicioTempoEX13 = time.time()
 
         # terceira pergunta do facil *
-        Rf3 = input(f'{Num5f} * {Num6f}=')
-        Rf3 = int(Rf3)
+        Rf3 = int(input(f'{Num5f} * {Num6f}='))
 
         # fim do tempo
         FimDoTempoEX13 = time.time()
@@ -116,8 +119,7 @@ if Inicio == '1':
         InicioTempoEX14 = time.time()
 
         # quarta pergunta do facil //
-        Rf4 = input(f'{Num7f} // {Num8f}=')
-        Rf4 = int(Rf4)
+        Rf4 = int(input(f'{Num7f} // {Num8f}='))
 
         # fim do tempo
         FimDoTempoEX14 = time.time()
@@ -144,7 +146,7 @@ if Inicio == '1':
         print(f" você fez um total de {NotaFinalEX11 + NotaFinalEX12 + NotaFinalEX13 + NotaFinalEX14} pontos ")
     
     # dificuldade medio
-    elif Dificuldade == 'médio' or Dificuldade == 'medio':
+    elif Dificuldade == 2:
         print('O jogo vai ser para apenas 1 pessoa')
 
         # declarnado numeros aleatorios
@@ -155,8 +157,7 @@ if Inicio == '1':
         InicioTempoEX11m = time.time()
 
         # primeira pergunta do medio +
-        Rm1 = input(f'{Num1m} + {Num2m}=')
-        Rm1 = int(Rm1)
+        Rm1 = int(input(f'{Num1m} + {Num2m}='))
 
         # fim do tempo
         FimDoTempoEX11m = time.time()
@@ -186,8 +187,7 @@ if Inicio == '1':
         InicioTempoEX12m = time.time()
 
         # segunda pergunta do medio -
-        Rm2 = input(f'{Num3m} - {Num4m}=')
-        Rm2 = int(Rm2)
+        Rm2 = int(input(f'{Num3m} - {Num4m}='))
 
         # fim do tempo 
         FimDoTempoEX12m = time.time()
@@ -217,8 +217,8 @@ if Inicio == '1':
         InicioTempoEX13m = time.time()
 
         # terceira pergunta do medio *
-        Rm3 = input(f'{Num5m} * {Num6m}=')
-        Rm3 = int(Rm3)
+        Rm3 = int(input(f'{Num5m} * {Num6m}='))
+
 
         # fim do tempo
         FimDoTempoEX13m = time.time()
@@ -248,8 +248,8 @@ if Inicio == '1':
         InicioTempoEX14m = time.time()
 
         # quarta pegunta do medio //
-        Rm4 = input(f'{Num7m} // {Num8m}=')
-        Rm4 = int(Rm4)
+        Rm4 = int(input(f'{Num7m} // {Num8m}='))
+
 
         # fim do tempo
         FimDoTempoEX14m = time.time()
@@ -275,7 +275,7 @@ if Inicio == '1':
         print(f" você fez um total de {NotaFinalEX11m + NotaFinalEX12m + NotaFinalEX13m + NotaFinalEX14m} pontos ")
 
     # dificuldade dificil
-    elif Dificuldade == 'difícil' or Dificuldade == ('dificil'):
+    elif Dificuldade == 3 :
 
         print('O jogo vai ser para apenas 1 pessoa')
 
@@ -287,8 +287,8 @@ if Inicio == '1':
         InicioTempoEX11d = time.time()
 
         # primeira pergunta do dificil +
-        Rd1 = input(f'{Num1d} + {Num2d}=')
-        Rd1 = int(Rd1)
+        Rd1 = int(input(f'{Num1d} + {Num2d}='))
+
 
         # fim do tempo  
         FimDoTempoEX11d = time.time()
@@ -318,8 +318,7 @@ if Inicio == '1':
         InicioTempoEX12d = time.time()
 
         # segunda pergunta dificil -
-        Rd2 = input(f'{Num3d} - {Num4d}=')
-        Rd2 = int(Rd2)
+        Rd2 = int(tinput(f'{Num3d} - {Num4d}='))
 
         # fim do tempo
         FimDoTempoEX12d = time.time()
@@ -349,8 +348,7 @@ if Inicio == '1':
         InicioTempoEX13d = time.time()
 
         # terceira pergunta do dificil *
-        Rd3 = input(f'{Num5d} * {Num6d}=')
-        Rd3 = int(Rd3)
+        Rd3 = int(input(f'{Num5d} * {Num6d}='))
 
         # fim do tempo 
         FimDoTempoEX13d = time.time()
@@ -380,8 +378,7 @@ if Inicio == '1':
         InicioTempoEX14d = time.time()
 
         # quarta pegunta do dificil //
-        Rd4 = input(f'{Num7d} // {Num8d}=')
-        Rd4 = int(Rd4)
+        Rd4 = int(input(f'{Num7d} // {Num8d}='))
 
         # fim do tempo
         FimDoTempoEX14d = time.time()
@@ -409,7 +406,7 @@ if Inicio == '1':
 elif Inicio == '2':
 # jogador um
     # modo facil do jogo dupla
-    if Dificuldade == 'fácil'or Dificuldade == 'facil':
+    if Dificuldade == 1 :
         print('O jogo vai ser para 2 pessoas')
         print('Vez do jogador Numero 1')
 
@@ -421,8 +418,7 @@ elif Inicio == '2':
         InicioTempoEX21 = time.time()
 
         # primeira pegunta do facil dupla +
-        Rf1d1 = input(f'{Num1fd1} + {Num2fd1}=')
-        Rf1d1 = int(Rf1d1)
+        Rf1d1 = int(input(f'{Num1fd1} + {Num2fd1}='))
 
         # fim do tempo
         FimDoTempoEX21 = time.time()
@@ -452,8 +448,7 @@ elif Inicio == '2':
         InicioTempoEX22 = time.time()
 
         # segunda pergunda do facil dupla -
-        Rf2d1 = input(f'{Num3fd1} - {Num4fd1}=')
-        Rf2d1 = int(Rf2d1)
+        Rf2d1 = int(input(f'{Num3fd1} - {Num4fd1}='))
 
         # fim do tempo
         FimDoTempoEX22 = time.time()
@@ -483,8 +478,7 @@ elif Inicio == '2':
         InicioTempoEX23 = time.time()
 
         # terceira pergunta do facil dupla *
-        Rf3d1 = input(f'{Num5fd1} * {Num6fd1}=')
-        Rf3d1 = int(Rf3d1)
+        Rf3d1 = int(input(f'{Num5fd1} * {Num6fd1}='))
 
         # fim do tempo
         FimDoTempoEX23 = time.time()
@@ -514,8 +508,7 @@ elif Inicio == '2':
         InicioTempoEX24 = time.time()
 
         # quarta pergunta do facil dupla //
-        Rf4d1 = input(f'{Num7fd1} // {Num8fd1}=')
-        Rf4d1 = int(Rf4d1)
+        Rf4d1 = int(input(f'{Num7fd1} // {Num8fd1}='))
 
         # fim do tempo 
         FimDoTempoEX24 = time.time()
@@ -551,8 +544,7 @@ elif Inicio == '2':
         InicioTempoEX31 = time.time()
 
         # primeira pegunta do facil dupla +
-        Rf1d2 = input(f'{Num1fd2} + {Num2fd2}=')
-        Rf1d2 = int(Rf1d2)
+        Rf1d2 = int(input(f'{Num1fd2} + {Num2fd2}='))
 
         # fim do tempo 
         FimDoTempoEX31 = time.time()
@@ -582,8 +574,7 @@ elif Inicio == '2':
         InicioTempoEX32 = time.time()
 
         # segunda pergunda do facil dupla -
-        Rf2d2 = input(f'{Num3fd2} - {Num4fd2}=')
-        Rf2d2 = int(Rf2d2)
+        Rf2d2 = int(input(f'{Num3fd2} - {Num4fd2}='))
 
         # fim do tempo 
         FimDoTempoEX32 = time.time()
@@ -613,8 +604,7 @@ elif Inicio == '2':
         InicioTempoEX33 = time.time()
 
         # terceira pergunta do facil dupla *
-        Rf3d2 = input(f'{Num5fd2} * {Num6fd2}=')
-        Rf3d2 = int(Rf3d2)
+        Rf3d2 = int(input(f'{Num5fd2} * {Num6fd2}='))
 
         # fim do tempo
         FimDoTempoEX33 = time.time()
@@ -644,8 +634,7 @@ elif Inicio == '2':
         InicioTempoEX34 = time.time()
 
         # quarta pergunta do facil dupla //
-        Rf4d2 = input(f'{Num7fd2} // {Num8fd2}=')
-        Rf4d2 = int(Rf4d2)
+        Rf4d2 = int(input(f'{Num7fd2} // {Num8fd2}='))
 
         # fim do tempo
         FimDoTempoEX34 = time.time()
@@ -673,7 +662,7 @@ elif Inicio == '2':
 
 # jogador um
     # modo medio do jogo dupla
-    elif Dificuldade == 'médio'or Dificuldade == 'medio':
+    elif Dificuldade == 2 :
         print('O jogo vai ser para 2 pessoas')
         print('Vez do jogador Numero 1')
 
@@ -685,8 +674,7 @@ elif Inicio == '2':
         InicioTempoEX21m = time.time()
 
         # primeira pegunta do médio dupla +
-        Rm1d1 = input(f'{Num1md1} + {Num2md1}=')
-        Rm1d1 = int(Rm1d1)
+        Rm1d1 = int(input(f'{Num1md1} + {Num2md1}='))
 
         # fim do tempo
         FimDoTempoEX21m = time.time()
@@ -716,8 +704,7 @@ elif Inicio == '2':
         InicioTempoEX22m = time.time()
 
         # segunda pergunda do medio dupla -
-        Rm2d1 = input(f'{Num3md1} - {Num4md1}=')
-        Rm2d1 = int(Rm2d1)
+        Rm2d1 = int(input(f'{Num3md1} - {Num4md1}='))
 
         # fim do tempo
         FimDoTempoEX22m = time.time()
@@ -746,8 +733,7 @@ elif Inicio == '2':
         InicioTempoEX23m = time.time()
 
         # terceira pergunta do medio dupla *
-        Rm3d1 = input(f'{Num5md1} * {Num6md1}=')
-        Rm3d1 = int(Rm3d1)
+        Rm3d1 = int(input(f'{Num5md1} * {Num6md1}='))
 
         # fim do tempo
         FimDoTempoEX23m = time.time()
@@ -779,8 +765,7 @@ elif Inicio == '2':
         InicioTempoEX24m = time.time()
 
         # quarta pergunta do medio dupla //
-        Rm4d1 = input(f'{Num7md1} / {Num8md1}=')
-        Rm4d1 = int(Rm4d1)
+        Rm4d1 = int(input(f'{Num7md1} / {Num8md1}='))
 
         # fim tempo 
         FimDoTempoEX24m = time.time()
@@ -815,8 +800,7 @@ elif Inicio == '2':
         InicioTempoEX31m = time.time()
         
         # primeira pegunta do medio dupla +
-        Rm1d2 = input(f'{Num1md2} + {Num2md2}=')
-        Rm1d2 = int(Rm1d2)
+        Rm1d2 = int(input(f'{Num1md2} + {Num2md2}='))
 
         # fim do tempo
         FimDoTempoEX31m = time.time()
@@ -846,8 +830,7 @@ elif Inicio == '2':
         InicioTempoEX32m = time.time()
 
         # segunda pergunda do facil dupla -
-        Rm2d2 = input(f'{Num3md2} - {Num4md2}=')
-        Rm2d2 = int(Rm2d2)
+        Rm2d2 = int(input(f'{Num3md2} - {Num4md2}='))
 
         # fim tempo
         FimDoTempoEX32m = time.time()
@@ -877,8 +860,7 @@ elif Inicio == '2':
         InicioTempoEX33m = time.time()
 
         # terceira pergunta do facil dupla *
-        Rm3d2 = input(f'{Num5md2} * {Num6md2}=')
-        Rm3d2 = int(Rm3d2)
+        Rm3d2 = int(input(f'{Num5md2} * {Num6md2}='))
 
         # fim tempo 
         FimDoTempoEX33m = time.time()
@@ -908,8 +890,7 @@ elif Inicio == '2':
         InicioTempoEX34m = time.time()
 
         # quarta pergunta do medio dupla //
-        Rm4d2 = input(f'{Num7md2} // {Num8md2}=')
-        Rm4d2 = int(Rm4d2)
+        Rm4d2 = int(input(f'{Num7md2} // {Num8md2}='))
 
         # fim do tempo
         FimDoTempoEX34m = time.time()
@@ -938,7 +919,7 @@ elif Inicio == '2':
 
 # jogador um
     # modo dificil do jogo dupla
-    if Dificuldade == 'difícil'or Dificuldade == 'dificil':
+    if Dificuldade == 3 :
 
         print('O jogo vai ser para 2 pessoas')
         print('Vez do jogador Numero 1')
@@ -951,8 +932,7 @@ elif Inicio == '2':
         InicioTempoEX21d = time.time()
 
         # primeira pegunta do dificil dupla +
-        RD1d1 = input(f'{Num1Dd1} + {Num2Dd1}=')
-        RD1d1 = int(RD1d1)
+        RD1d1 = int(input(f'{Num1Dd1} + {Num2Dd1}='))
 
         # fim tempo
         FimDoTempoEX21d = time.time()
@@ -982,8 +962,7 @@ elif Inicio == '2':
         InicioTempoEX22d = time.time()
 
         # segunda pergunda do dificil dupla -
-        RD2d1 = input(f'{Num3Dd1} - {Num4Dd1}=')
-        RD2d1 = int(RD2d1)
+        RD2d1 = int(input(f'{Num3Dd1} - {Num4Dd1}='))
 
         # fim do tempo
         FimDoTempoEX22d = time.time()
@@ -1014,8 +993,8 @@ elif Inicio == '2':
         InicioTempoEX23d = time.time()
 
         # terceira pergunta do dificil dupla *
-        RD3d1 = input(f'{Num5Dd1} * {Num6Dd1}=')
-        RD3d1 = int(RD3d1)
+        RD3d1 = int(input(f'{Num5Dd1} * {Num6Dd1}='))
+
 
         # fim tempo
         FimDoTempoEX23d = time.time()
@@ -1046,8 +1025,8 @@ elif Inicio == '2':
 
 
         # quarta pergunta do facil dupla //
-        RD4d1 = input(f'{Num7Dd1} / {Num8Dd1}=')
-        RD4d1 = int(RD4d1)
+        RD4d1 = int(input(f'{Num7Dd1} / {Num8Dd1}='))
+
 
         # fim tempo
         FimDoTempoEX24d = time.time()
@@ -1082,8 +1061,7 @@ elif Inicio == '2':
         InicioTempoEX31d = time.time()
 
         # primeira pegunta do dificil dupla +
-        RD1d2 = input(f'{Num1Dd2} + {Num2Dd2}=')
-        RD1d2 = int(RD1d2)
+        RD1d2 = int(input(f'{Num1Dd2} + {Num2Dd2}='))
 
         # fim tempo
         FimDoTempoEX31d = time.time()
@@ -1113,8 +1091,7 @@ elif Inicio == '2':
         InicioTempoEX32d = time.time()
 
         # segunda pergunda do dificil dupla -
-        RD2d2 = input(f'{Num3Dd2} - {Num4Dd2}=')
-        RD2d2 = int(RD2d2)
+        RD2d2 = int(input(f'{Num3Dd2} - {Num4Dd2}='))
 
         # fim do tempo
         FimDoTempoEX32d = time.time()
@@ -1144,8 +1121,8 @@ elif Inicio == '2':
         InicioTempoEX33d = time.time()
 
         # terceira pergunta do facil dupla *
-        RD3d2 = input(f'{Num5Dd2} * {Num6Dd2}=')
-        RD3d2 = int(RD3d2)
+        RD3d2 = int(input(f'{Num5Dd2} * {Num6Dd2}='))
+
 
         # fim tempo
         FimDoTempoEX33d = time.time()
@@ -1175,8 +1152,7 @@ elif Inicio == '2':
         InicioTempoEX34d = time.time()
 
         # quarta pergunta do dificil dupla //
-        RD4d2 = input(f'{Num7Dd2} // {Num8Dd2}=')
-        RD4d2 = int(RD4d2)
+        RD4d2 = int(input(f'{Num7Dd2} // {Num8Dd2}='))
 
         # fim tempo
         FimDoTempoEX34d = time.time()
