@@ -765,7 +765,7 @@ elif Inicio == '2':
         InicioTempoEX24m = time.time()
 
         # quarta pergunta do medio dupla //
-        Rm4d1 = int(input(f'{Num7md1} / {Num8md1}='))
+        Rm4d1 = int(input(f'{Num7md1} // {Num8md1}='))
 
         # fim tempo 
         FimDoTempoEX24m = time.time()
